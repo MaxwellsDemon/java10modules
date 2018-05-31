@@ -1,4 +1,4 @@
-# Learning project for Java 10 and Java modules
+# Learning Project for Java 10 and Java Modules
 
 To build:
 
@@ -21,4 +21,10 @@ Copy the built jars to a brand new "lib" directory somewhere safe:
 	java -cp "lib/*" com.example.acmeclient.client.AcmeClient
 ```
 
+### Creating Custom Runtime Image
+
+```bash
+mkdir -p tmp
+"${JAVA_HOME}/bin/jlink" --module-path acmeclient/target/acmeclient-1.0-SNAPSHOT.jar:acmeserver/target/acmeserver-1.0-SNAPSHOT.jar --add-modules acmeclient --output tmp/jimage --compress=2
+```
 
