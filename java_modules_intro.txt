@@ -1,0 +1,32 @@
+
+ 			Java 9 Modules
+		
+		A Java module a new organization above packages
+		A Java module is named
+		A Java module represents one or more packages
+		A Java module lists other modules as dependencies
+		A Java module is conceptually a lot like Maven artifacts
+
+		A jar contains at most one module
+		A jar contains one module-info.class descriptor
+
+		Exercise: List Java 10 Runtime modules
+
+			java --list-modules
+
+
+		Neither Java modules or Maven POMs know about each other
+		A good IDE will keep Java modules and Maven POMS in sync
+
+
+		TODO
+
+		A Java module is declared in module-info.java
+		
+
+ 		Two custom Java modules
+			ACME Client
+			ACME Server
+
+ 		ACME Client requires ACME Server
+
